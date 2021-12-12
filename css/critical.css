@@ -4046,9 +4046,9 @@ a:hover {
   }
 }
 @media only screen and (min-width:1300px) {
-  .top-bar--s2 .top-bar__line-contacts {
+  /* .top-bar--s2 .top-bar__line-contacts {
     margin-right: 250px
-  }
+  } */
   .top-bar__navigation li {
     margin-left: 25px
   }
