@@ -7909,7 +7909,7 @@ label {
   bottom: 0;
   width: 260px;
   background-color: #25272a;
-  padding: 125px 30px 50px;
+  padding: 145px 30px 50px;
   font-size: 1.6rem;
   font-weight: 700;
   color: #d3d3d3;
@@ -7940,15 +7940,18 @@ label {
   overflow: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: scrollbar
+  -ms-overflow-style: scrollbar;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .side-menu__menu {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   line-height: 1.4
 }
 .side-menu__menu li {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase
