@@ -16566,11 +16566,11 @@ var trim = String.prototype.trim ?
 					})
 					.slick({
 						autoplay: true,
-						autoplaySpeed: 5000,
-						adaptiveHeight: true,
+						autoplaySpeed: 10000,
+						adaptiveHeight: false,
 						dots: true,
 						arrows: false,
-						speed: 800,
+						speed: 1000,
 						mobileFirst: true,
 						slidesToShow: 1,
 						slidesToScroll: 1,
