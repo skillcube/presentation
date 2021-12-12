@@ -16566,7 +16566,7 @@ var trim = String.prototype.trim ?
 					})
 					.slick({
 						autoplay: true,
-						autoplaySpeed: 10000,
+						autoplaySpeed: 6000,
 						adaptiveHeight: false,
 						dots: true,
 						arrows: false,
