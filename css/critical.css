@@ -1648,7 +1648,7 @@ a:hover {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1
+  z-index: -1;
 }
 .start-screen__slider-nav {
   display: none;
@@ -1725,7 +1725,7 @@ a:hover {
   font-size: 3rem;
   font-weight: 400;
   font-family: 'Fredericka the Great',cursive;
-  color: #333;
+  color: #fff;
   letter-spacing: -.05em
 }
 .start-screen--style-1 .start-screen__slider-nav {
@@ -1765,7 +1765,7 @@ a:hover {
 .start-screen--style-2 .start-screen__slide--3 .__title {
   font-weight: 400;
   font-family: 'Fredericka the Great',cursive;
-  color: #333
+  color: #fff;
 }
 .start-screen--style-2 .__title {
   line-height: .9;
