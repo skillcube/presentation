@@ -17442,8 +17442,12 @@ const closeMenu = () => {
     menu.click();
   }
 };
-const menuItem = document.querySelectorAll("#top-bar__navigation ul li a");
+const menuItemLi = document.querySelectorAll("#top-bar__navigation ul li");
+const menuItemA = document.querySelectorAll("#top-bar__navigation ul li a");
 
-menuItem.forEach(item => {
+menuItemLi.forEach(item => {
+  item.addEventListener("click", closeMenu);
+});
+menuItemA.forEach(item => {
   item.addEventListener("click", closeMenu);
 });
