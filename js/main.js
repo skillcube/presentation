@@ -17436,18 +17436,14 @@ var trim = String.prototype.trim ?
 
 
 const closeMenu = () => {
-  console.log(window.innerWidth);
   if ( window.innerWidth < 1199 ) {
     const menu = document.querySelector("#top-bar__navigation-toggler");
     menu.click();
   }
 };
-const menuItemLi = document.querySelectorAll("#top-bar__navigation ul li");
-const menuItemA = document.querySelectorAll("#top-bar__navigation ul li a");
+const menuItem = document.querySelectorAll("#top-bar__navigation ul li a");
 
-menuItemLi.forEach(item => {
-  item.addEventListener("click", closeMenu);
-});
-menuItemA.forEach(item => {
+menuItem.forEach(item => {
+  item.addEventListener("touchstart", closeMenu);
   item.addEventListener("click", closeMenu);
 });
