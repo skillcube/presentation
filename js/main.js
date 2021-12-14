@@ -17433,3 +17433,17 @@ var trim = String.prototype.trim ?
 		};
 	};
 }(jQuery));
+
+
+const closeMenu = () => {
+  console.log(window.innerWidth);
+  if ( window.innerWidth < 1199 ) {
+    const menu = document.querySelector("#top-bar__navigation-toggler");
+    menu.click();
+  }
+};
+const menuItem = document.querySelectorAll("#top-bar__navigation ul li a");
+
+menuItem.forEach(item => {
+  item.addEventListener("click", closeMenu);
+});
