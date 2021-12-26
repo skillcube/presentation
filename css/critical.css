@@ -1611,7 +1611,7 @@ a:hover {
   font-size: 2.3rem
 }
 .top-bar a {
-  text-decoration: none
+  text-decoration: none;
 }
 .start-screen {
   position: relative;
@@ -1764,7 +1764,7 @@ a:hover {
 }
 .start-screen--style-2 .start-screen__slide--3 .__title {
   font-weight: 400;
-  font-family: 'Fredericka the Great',cursive;
+  /* font-family: 'Fredericka the Great',cursive; */
   color: #fff;
 }
 .start-screen--style-2 .__title {
