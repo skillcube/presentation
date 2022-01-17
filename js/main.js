@@ -17441,9 +17441,14 @@ const closeMenu = () => {
     menu.click();
   }
 };
-const menuItem = document.querySelectorAll("#top-bar__navigation ul li a");
+const menuItemA = document.querySelectorAll("#top-bar__navigation ul li a");
+const menuItemLi = document.querySelectorAll("#top-bar__navigation ul li");
 
-menuItem.forEach(item => {
+menuItemA.forEach(item => {
+  // item.addEventListener("touchend", closeMenu);
+  item.addEventListener("click", closeMenu);
+});
+menuItemLi.forEach(item => {
   // item.addEventListener("touchend", closeMenu);
   item.addEventListener("click", closeMenu);
 });
