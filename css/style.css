@@ -11010,6 +11010,13 @@ label {
     width: 32%
   }
 }
+
+@media (max-width:900px) {
+  .about-img img.lazy { 
+    width: auto;
+    height: 50vh;
+  }
+}
 @media (max-width:576px) {
   .fancybox-thumbs {
     width: 110px
