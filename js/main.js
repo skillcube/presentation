@@ -17441,14 +17441,13 @@ const closeMenu = () => {
     menu.click();
   }
 };
-const menuItemA = document.querySelectorAll("#top-bar__navigation ul li a");
-const menuItemLi = document.querySelectorAll("#top-bar__navigation ul li");
+const menuItems = document.querySelectorAll("#top-bar__navigation ul li a");
 
-menuItemA.forEach(item => {
-  // item.addEventListener("touchend", closeMenu);
-  item.addEventListener("click", closeMenu);
-});
-menuItemLi.forEach(item => {
-  // item.addEventListener("touchend", closeMenu);
-  item.addEventListener("click", closeMenu);
+menuItems.forEach(item => {
+  console.log('item: ', item.className);
+  if(item.className === 'mobile-page-link') {
+    item.addEventListener("click", closeMenu);
+  } else {
+    item.addEventListener("touchend", closeMenu);
+  }
 });
