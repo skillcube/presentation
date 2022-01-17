@@ -17444,6 +17444,6 @@ const closeMenu = () => {
 const menuItem = document.querySelectorAll("#top-bar__navigation ul li a");
 
 menuItem.forEach(item => {
-  item.addEventListener("touchend", closeMenu);
+  // item.addEventListener("touchend", closeMenu);
   item.addEventListener("click", closeMenu);
 });
