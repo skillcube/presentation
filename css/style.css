@@ -10318,7 +10318,13 @@ label {
   .section .decor-el {
     display: block
   }
+  .about-img img.lazy { 
+    width: auto;
+  }
   .about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: -15px;
     padding-left: 15px;
     width: 49.4vw
