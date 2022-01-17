@@ -11017,7 +11017,7 @@ label {
     height: 50vh;
   }
   .start-screen-mobile-bg {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .4) 0%, rgba(0, 0, 0, .9) 100%), url(../img/start-screen_img/3/bg_1.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .4) 0%, rgba(0, 0, 0, .9) 100%), url(../img/start-screen_img/3/bg_1.jpg) !important;
     background-position: center center;
     background-size: cover;
   }
