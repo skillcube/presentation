@@ -11255,7 +11255,13 @@ label {
 }
 
 .start-screen-mobile-bg {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, .4) 0%, rgba(0, 0, 0, .9) 100%), url(../img/start-screen_img/3/bg_1.jpg) !important;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .4) 0%, rgba(0, 0, 0, .9) 100%), url(../img/start-screen_img/3/bg_1.jpg);
   background-position: center center !important;
   background-size: cover !important;
+}
+
+@media(max-width: 900px) {
+  .start-screen-mobile-bg {
+    background: url(../img/start-screen_img/3/bg_1.jpg);
+  }
 }
