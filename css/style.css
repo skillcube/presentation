@@ -11260,8 +11260,31 @@ label {
   background-size: cover !important;
 }
 
+.custom-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f95a3f;
+  border: 10px solid #fff;
+  height: 150px;
+  line-height: 85px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  transition: .3s;
+}
+
+.custom-card:hover,
+.custom-card:focus {
+  color: #fff;
+}
+
 @media(max-width: 900px) {
   .start-screen-mobile-bg {
     background: url(../img/start-screen_img/3/bg_1.jpg);
+  }
+
+  .custom-card {
+    font-size: 1.6rem;
   }
 }

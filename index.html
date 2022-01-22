@@ -1,103 +1,137 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+  <head>
+    <title>SkillCube</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<head>
-  <title>SkillCube</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui"
+    />
 
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-  <meta name="viewport"
-    content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui" />
+    <meta name="theme-color" content="#056EB9" />
+    <meta name="msapplication-navbutton-color" content="#056EB9" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#056EB9" />
 
-  <meta name="theme-color" content="#056EB9" />
-  <meta name="msapplication-navbutton-color" content="#056EB9" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="#056EB9" />
-
-  <!-- Favicons
+    <!-- Favicons
 		================================================== -->
-  <link rel="shortcut icon" href="img/favicon/favicon.ico" />
-  <link rel="icon" href="img/favicon/favicon-32x32.png" type="image/png" sizes="32x32" />
-  <link rel="icon" href="img/favicon/favicon-16x16.png" type="image/png" sizes="16x16" />
-  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" sizes="180x180" />
-  <link rel="manifest" href="img/favicon/manifest.json" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      href="img/favicon/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="img/favicon/favicon-16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="img/favicon/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link rel="manifest" href="img/favicon/manifest.json" />
 
-  <!-- Critical styles
+    <!-- Critical styles
 		================================================== -->
-  <link rel="stylesheet" href="css/critical.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/critical.min.css" type="text/css" />
 
-  <!-- Load google font
+    <!-- Load google font
 		================================================== -->
-  <script type="text/javascript">
-    WebFontConfig = {
-      google: {
-        families: [
-          "Assistant:200,300,400,600,700,800",
-          "Raleway:600&display=swap",
-        ],
-      },
-    };
-    (function () {
-      var wf = document.createElement("script");
-      wf.src =
-        ("https:" == document.location.protocol ? "https" : "http") +
-        "://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js";
-      wf.type = "text/javascript";
-      wf.async = "true";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(wf, s);
-    })();
-  </script>
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: {
+          families: [
+            "Assistant:200,300,400,600,700,800",
+            "Raleway:600&display=swap",
+          ],
+        },
+      };
+      (function () {
+        var wf = document.createElement("script");
+        wf.src =
+          ("https:" == document.location.protocol ? "https" : "http") +
+          "://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js";
+        wf.type = "text/javascript";
+        wf.async = "true";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
 
-  <!-- Load other scripts
+    <!-- Load other scripts
 		================================================== -->
-  <script type="text/javascript">
-    var _html = document.documentElement,
-      isTouch =
-        "ontouchstart" in _html ||
-        navigator.msMaxTouchPoints > 0 ||
-        navigator.maxTouchPoints;
+    <script type="text/javascript">
+      var _html = document.documentElement,
+        isTouch =
+          "ontouchstart" in _html ||
+          navigator.msMaxTouchPoints > 0 ||
+          navigator.maxTouchPoints;
 
-    _html.className = _html.className.replace("no-js", "js");
-    _html.classList.add(isTouch ? "touch" : "no-touch");
-  </script>
-  <script type="text/javascript" src="js/device.min.js"></script>
-</head>
+      _html.className = _html.className.replace("no-js", "js");
+      _html.classList.add(isTouch ? "touch" : "no-touch");
+    </script>
+    <script type="text/javascript" src="js/device.min.js"></script>
+  </head>
 
-<body class="page-home page-home-2">
-  <div id="app">
-    <!-- start header -->
-    <header id="top-bar" class="top-bar top-bar--s2" data-nav-fixed="true" data-nav-anchor="false">
-      <!-- class "compensate-for-scrollbar" from fancybox.js, use if data-fixed="true" -->
-      <div class="top-bar__line-menu compensate-for-scrollbar">
-        <div class="top-bar__side-menu-button js-side-menu-toggler">
-          <span></span>
-        </div>
+  <body class="page-home page-home-2">
+    <div id="app">
+      <!-- start header -->
+      <header
+        id="top-bar"
+        class="top-bar top-bar--s2"
+        data-nav-fixed="true"
+        data-nav-anchor="false"
+      >
+        <!-- class "compensate-for-scrollbar" from fancybox.js, use if data-fixed="true" -->
+        <div class="top-bar__line-menu compensate-for-scrollbar">
+          <div class="top-bar__side-menu-button js-side-menu-toggler">
+            <span></span>
+          </div>
 
+          <a class="top-bar__logo site-logo" href="index.html">
+            <img
+              class="img-fluid"
+              src="img/site_logo/logo_1.png"
+              width="155"
+              height="40"
+              alt="demo"
+            />
+          </a>
+          <div class="mobile-only_phone">
+            <a href="tel:0041412102500"><i class="fontello-phone"></i></a>
+          </div>
 
-        <a class="top-bar__logo site-logo" href="index.html">
-          <img class="img-fluid" src="img/site_logo/logo_1.png" width="155" height="40" alt="demo" />
-        </a>
-        <div class="mobile-only_phone">
-          <a href="tel:0041412102500"><i class="fontello-phone"></i></a>
-        </div>
+          <a
+            id="top-bar__navigation-toggler"
+            class="top-bar__navigation-toggler"
+            href="javascript:void(0);"
+          >
+            <span></span>
+          </a>
 
+          <div class="top-bar__collapse">
+            <div>
+              <nav
+                id="top-bar__navigation"
+                class="top-bar__navigation"
+                role="navigation"
+              >
+                <ul>
+                  <li><a href="#produkte">Produkte</a></li>
+                  <li><a href="#dienstleistungen">Dienstleistungen</a></li>
+                  <li><a href="#galerie">Galerie</a></li>
+                  <!-- <li><a href="#prozess">Prozess</a></li> -->
+                  <li><a href="#uber-uns">Über uns</a></li>
+                  <li>
+                    <a class="mobile-page-link" href="kontakt.html">Kontakt</a>
+                  </li>
 
-        <a id="top-bar__navigation-toggler" class="top-bar__navigation-toggler" href="javascript:void(0);">
-          <span></span>
-        </a>
-  
-        <div class="top-bar__collapse">
-          <div>
-            <nav id="top-bar__navigation" class="top-bar__navigation" role="navigation">
-              <ul>
-                <li><a href="#produkte">Produkte</a></li>
-                <li><a href="#dienstleistungen">Dienstleistungen</a></li>
-                <li><a href="#galerie">Galerie</a></li>
-                <!-- <li><a href="#prozess">Prozess</a></li> -->
-                <li><a href="#uber-uns">Über uns</a></li>
-                <li><a class="mobile-page-link" href="kontakt.html">Kontakt</a></li>
-
-                <!-- <li class="has-submenu">
+                  <!-- <li class="has-submenu">
                   <a class="nav-link" href="javascript:void(0);">Pages</a>
 
                   <ul class="submenu">
@@ -158,50 +192,57 @@
                     <li><a href="elements-tabs.html">Tabs</a></li>
                   </ul>
                 </li> -->
-              </ul>
-            </nav>
+                </ul>
+              </nav>
 
-            <div class="top-bar__address">
-              <ul class="contact-info">
-                <li>
-                  <div class="__label">Phone</div>
-                  <p>0041 41 210 25 00</p>
-                </li>
-              </ul>
-            </div>
-
-            <div class="top-bar__action">
-              <a class="custom-btn" href="tel:0041412102500">Kontaktieren Sie uns</a>
-              <a class="custom-btn custom-btn--big custom-btn--s2" href="tel:0041412102500">Kontaktieren Sie uns</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-
-      <div class="top-bar__line-contacts">
-        <div class="container-fluid">
-          <div class="row align-items-center justify-content-lg-between">
-            <div class="col-auto">
-              <div class="top-bar__contacts">
-                <ul>
+              <div class="top-bar__address">
+                <ul class="contact-info">
                   <li>
-                    <a href="tel:0041412102500">0041 41 210 25 00</a>
-                  </li>
-
-                  <li>
-                    <a href="mailto:support@skillcube.com">support@skillcube.com</a>
+                    <div class="__label">Phone</div>
+                    <p>0041 41 210 25 00</p>
                   </li>
                 </ul>
               </div>
-            </div>
 
-            <div class="col-auto">
-              <div class="row">
-                <div class="col-auto">
-                  <div class="top-bar__socials">
-                    <!-- start social buttons -->
-                    <!-- <div class="s-btns s-btns--gray">
+              <div class="top-bar__action">
+                <a class="custom-btn" href="tel:0041412102500"
+                  >Kontaktieren Sie uns</a
+                >
+                <a
+                  class="custom-btn custom-btn--big custom-btn--s2"
+                  href="tel:0041412102500"
+                  >Kontaktieren Sie uns</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="top-bar__line-contacts">
+          <div class="container-fluid">
+            <div class="row align-items-center justify-content-lg-between">
+              <div class="col-auto">
+                <div class="top-bar__contacts">
+                  <ul>
+                    <li>
+                      <a href="tel:0041412102500">0041 41 210 25 00</a>
+                    </li>
+
+                    <li>
+                      <a href="mailto:support@skillcube.com"
+                        >support@skillcube.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div class="row">
+                  <div class="col-auto">
+                    <div class="top-bar__socials">
+                      <!-- start social buttons -->
+                      <!-- <div class="s-btns s-btns--gray">
                       <ul class="
                             d-flex
                             flex-row flex-wrap
@@ -222,43 +263,41 @@
                         </li>
                       </ul>
                     </div> -->
-                    <!-- end social buttons -->
+                      <!-- end social buttons -->
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </header>
-    <!-- end header -->
+      </header>
+      <!-- end header -->
 
-    <!-- start side menu -->
-    <div id="side-menu" class="side-menu d-none">
-      <div class="side-menu__inner">
-        <ul class="side-menu__menu">
-          <li><a href="#uber-uns">Über uns</a></li>
-          <li><a href="#produkte">Produkte</a></li>
-          <li><a href="#dienstleistungen">Dienstleistungen</a></li>
-          <li><a href="#galerie">Galerie</a></li>
-          <li><a href="#prozess">Prozess</a></li>
-          <li><a href="#referenzen">Referenzen</a></li>
-        </ul>
+      <!-- start side menu -->
+      <div id="side-menu" class="side-menu d-none">
+        <div class="side-menu__inner">
+          <ul class="side-menu__menu">
+            <li><a href="#uber-uns">Über uns</a></li>
+            <li><a href="#produkte">Produkte</a></li>
+            <li><a href="#dienstleistungen">Dienstleistungen</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#prozess">Prozess</a></li>
+            <li><a href="#referenzen">Referenzen</a></li>
+          </ul>
 
-        <div class="side-menu__contacts">
-          <ul class="contact-info">
-            <li>
-              <div class="__label">Phone</div>
-              <p>
-                0041 41 210 25 00
-              </p>
-            </li>
+          <div class="side-menu__contacts">
+            <ul class="contact-info">
+              <li>
+                <div class="__label">Phone</div>
+                <p>0041 41 210 25 00</p>
+              </li>
 
-            <li>
-              <!-- <div class="__label">Social</div> -->
+              <li>
+                <!-- <div class="__label">Social</div> -->
 
-              <!-- start social buttons -->
-              <!-- <div class="s-btns s-btns--gray">
+                <!-- start social buttons -->
+                <!-- <div class="s-btns s-btns--gray">
                 <ul class="d-flex flex-row flex-wrap align-items-center">
                   <li>
                     <a class="f" href="#"><i class="fontello-facebook"></i></a>
@@ -274,21 +313,28 @@
                   </li>
                 </ul>
               </div> -->
-              <!-- end social buttons -->
-            </li>
-          </ul>
-        </div>
+                <!-- end social buttons -->
+              </li>
+            </ul>
+          </div>
 
-        <div>
-          <a class="custom-btn custom-btn--big custom-btn--s2 wide" href="kontakt.html">Kontakt</a>
+          <div>
+            <a
+              class="custom-btn custom-btn--big custom-btn--s2 wide"
+              href="kontakt.html"
+              >Kontakt</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-    <!-- end side menu -->
+      <!-- end side menu -->
 
-    <!-- start start screen -->
-    <div id="start-screen" class="start-screen start-screen--style-2">
-      <div id="start-screen__slider" class="start-screen__slider" data-slick='{
+      <!-- start start screen -->
+      <div id="start-screen" class="start-screen start-screen--style-2">
+        <div
+          id="start-screen__slider"
+          class="start-screen__slider"
+          data-slick='{
 						"autoplay": true,
 						"fade": true,
 						"speed": 1200,
@@ -299,8 +345,9 @@
 								"appendDots":"#start-screen__slider-nav"
 							}
 						}]
-					}'>
-        <!-- <div class="
+					}'
+        >
+          <!-- <div class="
               start-screen__slide start-screen__slide--1
               align-items-center
               text-center
@@ -332,7 +379,7 @@
           </div>
         </div> -->
 
-        <!-- <div class="
+          <!-- <div class="
               start-screen__slide start-screen__slide--2
               align-items-center
             ">
@@ -355,34 +402,38 @@
           </div>
         </div> -->
 
-        <div class="
-              start-screen__slide start-screen__slide--3
-              align-items-center
-            ">
-          <div class="__bg dark_overlay start-screen-mobile-bg" style="
-                background-position: center center;
-                background-size: cover;
-              "></div>
+          <div
+            class="start-screen__slide start-screen__slide--3 align-items-center"
+          >
+            <div
+              class="__bg dark_overlay start-screen-mobile-bg"
+              style="background-position: center center; background-size: cover"
+            ></div>
 
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 col-lg-8 col-xl-7">
-                <div class="__title">
-                  Geschicklichkeits- und Unterhaltungsgeräte in Bars und Restaurants
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-7">
+                  <div class="__title">
+                    Geschicklichkeits- und Unterhaltungsgeräte in Bars und
+                    Restaurants
+                  </div>
+
+                  <div class="spacer py-4"></div>
+
+                  <p>
+                    <a
+                      class="custom-btn custom-btn--big custom-btn--s2"
+                      href="tel:0041412102500"
+                      >Kontaktieren Sie uns</a
+                    >
+                  </p>
                 </div>
-
-                <div class="spacer py-4"></div>
-
-                <p>
-                  <a class="custom-btn custom-btn--big custom-btn--s2" href="tel:0041412102500">Kontaktieren Sie uns</a>
-                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- <div class="start-screen__panel">
+        <!-- <div class="start-screen__panel">
         <div class="d-md-table w-100">
           <div class="d-md-table-cell align-middle text-left pl-5">
             <div id="start-screen__slider-nav" class="start-screen__slider-nav start-screen__slider-nav--hor" dir="rtl">
@@ -392,8 +443,8 @@
           </div>
 
           <div class="d-md-table-cell align-middle"> -->
-      <!-- start video block -->
-      <!-- <div class="video-block">
+        <!-- start video block -->
+        <!-- <div class="video-block">
               <a href="https://www.youtube.com/embed/1zG1iq9LZ2U" class="btn_play btn_play--dark" data-fancybox="video">
                 <span class="d-table">
                   <span class="d-table-cell align-middle"><i></i></span>
@@ -401,80 +452,101 @@
                 </span>
               </a>
             </div> -->
-      <!-- end video block -->
-      <!-- </div>
+        <!-- end video block -->
+        <!-- </div>
         </div>
       </div> -->
 
-      <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet" />
-    </div>
-    <!-- end start screen -->
+        <link
+          href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap"
+          rel="stylesheet"
+        />
+      </div>
+      <!-- end start screen -->
 
-    <!-- start main -->
-    <main role="main">
-      <!-- Common styles
+      <!-- start main -->
+      <main role="main">
+        <!-- Common styles
 				================================================== -->
-      <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
 
-      <!-- start section -->
-      <section class="section section--about">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-6">
-              <div id="uber-uns" class="section-heading section-heading--left pt-4">
-                <h5 class="__subtitle">ÜBER UNS</h5>
+        <!-- start section -->
+        <section class="section section--about">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div
+                  id="uber-uns"
+                  class="section-heading section-heading--left pt-4"
+                >
+                  <h5 class="__subtitle">ÜBER UNS</h5>
 
-                <h2 class="__title">
-                  SkillCube Automaten <br />
-                  <span>in&nbsp;Ihrem Lokal</span>
-                </h2>
-              </div>
+                  <h2 class="__title">
+                    SkillCube Automaten <br />
+                    <span>in&nbsp;Ihrem Lokal</span>
+                  </h2>
+                </div>
 
-              <div class="spacer py-3"></div>
+                <div class="spacer py-3"></div>
 
-              <div class="content-container">
-                <p>
-                  <strong>SkillCube bietet bewilligte Unterhaltungs- und Geschicklichkeitsgeräte an, welche in
-                    Gastrobetrieben aufgestellt werden können. Kunden generieren ein signifikantes, risikofreies
-                    Zusatzeinkommen dank unseren Automaten, ohne sich um den Betrieb der Geräte kümmern zu
-                    müssen.</strong>
-                </p>
+                <div class="content-container">
+                  <p>
+                    <strong
+                      >SkillCube bietet bewilligte Unterhaltungs- und
+                      Geschicklichkeitsgeräte an, welche in Gastrobetrieben
+                      aufgestellt werden können. Kunden generieren ein
+                      signifikantes, risikofreies Zusatzeinkommen dank unseren
+                      Automaten, ohne sich um den Betrieb der Geräte kümmern zu
+                      müssen.</strong
+                    >
+                  </p>
 
-                <p>
-                  Wir bemühen uns stetig weiterzuentwickeln indem wir eine
-                  Nulltoleranz gegenüber Störungen in Hard- und Software bei
-                  unseren Geräten haben und die Einhaltung von gesetzlichen
-                  Rahmenbedingungen oberste Priorität hat.
-                </p>
+                  <p>
+                    Wir bemühen uns stetig weiterzuentwickeln indem wir eine
+                    Nulltoleranz gegenüber Störungen in Hard- und Software bei
+                    unseren Geräten haben und die Einhaltung von gesetzlichen
+                    Rahmenbedingungen oberste Priorität hat.
+                  </p>
 
-                <div class="spacer"></div>
+                  <div class="spacer"></div>
 
-                <p>
-                  <a class="custom-btn custom-btn--big custom-btn--s1" href="tel:0041412102500">Kontaktieren Sie uns</a>
-                </p>
+                  <p>
+                    <a
+                      class="custom-btn custom-btn--big custom-btn--s1"
+                      href="tel:0041412102500"
+                      >Kontaktieren Sie uns</a
+                    >
+                  </p>
 
-                <div class="spacer py-2"></div>
+                  <div class="spacer py-2"></div>
 
-                <!-- start counter -->
-                <div class="counter counter--s1">
-                  <div class="__inner">
-                    <div class="row">
-                      <!-- start item -->
-                      <div class="col-12 col-md-auto">
-                        <div class="__item">
-                          <div class="__content">
-                            <div class="__count js-count" data-from="0" data-to="300" data-after-text="+">
-                              0
+                  <!-- start counter -->
+                  <div class="counter counter--s1">
+                    <div class="__inner">
+                      <div class="row">
+                        <!-- start item -->
+                        <div class="col-12 col-md-auto">
+                          <div class="__item">
+                            <div class="__content">
+                              <div
+                                class="__count js-count"
+                                data-from="0"
+                                data-to="300"
+                                data-after-text="+"
+                              >
+                                0
+                              </div>
+
+                              <h4 class="__title">
+                                Schweizweit aufgestellte Geräte
+                              </h4>
                             </div>
-
-                            <h4 class="__title">Schweizweit aufgestellte Geräte</h4>
                           </div>
                         </div>
-                      </div>
-                      <!-- end item -->
+                        <!-- end item -->
 
-                      <!-- start item -->
-                      <!-- <div class="col-12 col-md-auto">
+                        <!-- start item -->
+                        <!-- <div class="col-12 col-md-auto">
                           <div class="__item">
                             <div class="__content">
                               <div
@@ -490,224 +562,304 @@
                             </div>
                           </div>
                         </div> -->
+                        <!-- end item -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end counter -->
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6">
+                <div class="spacer py-4 py-md-6 d-lg-none"></div>
+
+                <div class="about-img text-center">
+                  <img
+                    class="lazy"
+                    width="719"
+                    height="741"
+                    src="img/blank.gif"
+                    data-src="img/icon-list_img/custom/4.png"
+                    alt="demo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end section -->
+
+        <!-- start section -->
+        <section
+          class="section section--bg-img jarallax"
+          data-speed="0.3"
+          data-img-position="50% 50%"
+          style="background-image: url(img/bg_8.jpg); background-color: #26282b"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div
+                  id="produkte"
+                  class="section-heading section-heading--center section-heading--white pt-4"
+                >
+                  <h5 class="__subtitle">PRODUKTE</h5>
+
+                  <h2 class="__title">SkillCube <span>Produkte</span></h2>
+
+                  <p>
+                    SkillCube zeichnet sich durch ein breities Angebot an
+                    unterschiedlichsten Unterhaltungs- und
+                    Geschicklichkeitsautomaten aus.
+                  </p>
+                </div>
+
+                <div class="spacer py-6"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end section -->
+
+        <!-- start section -->
+        <section class="section section--no-pt">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <!-- start icon list -->
+                <div class="icon-list icon-list--s1">
+                  <div class="__inner">
+                    <div class="row">
+                      <!-- start item -->
+                      <div class="col-6 col-md-4 col-lg-4">
+                        <div class="__item">
+                          <figure class="__image">
+                            <img
+                              class="lazy"
+                              src="img/blank.gif"
+                              width="113"
+                              height="195"
+                              data-src="img/icon-list_img/custom/1.png"
+                              alt="demo"
+                            />
+                          </figure>
+
+                          <h4>
+                            <a href="javascritp:void(0)">Big Fish Multi</a>
+                          </h4>
+                        </div>
+                      </div>
+                      <!-- end item -->
+
+                      <!-- start item -->
+                      <div class="col-6 col-md-4 col-lg-4">
+                        <div class="__item">
+                          <figure class="__image">
+                            <img
+                              class="lazy"
+                              src="img/blank.gif"
+                              width="94"
+                              height="195"
+                              data-src="img/icon-list_img/custom/2.png"
+                              alt="demo"
+                            />
+                          </figure>
+
+                          <h4><a href="javascritp:void(0)">Big 21</a></h4>
+                        </div>
+                      </div>
+                      <!-- end item -->
+
+                      <!-- start item -->
+                      <div class="col-6 col-md-4 col-lg-4">
+                        <div class="__item">
+                          <figure class="__image">
+                            <img
+                              class="lazy"
+                              src="img/blank.gif"
+                              width="116"
+                              height="201"
+                              data-src="img/icon-list_img/custom/3.png"
+                              alt="demo"
+                            />
+                          </figure>
+
+                          <h4><a href="javascritp:void(0)">Super Club</a></h4>
+                        </div>
+                      </div>
+                      <!-- end item -->
+
+                      <!-- start item -->
+                      <div class="col-6 col-md-4 col-lg-4">
+                        <div class="__item">
+                          <figure class="__image">
+                            <img
+                              class="lazy"
+                              src="img/blank.gif"
+                              width="91"
+                              height="200"
+                              data-src="img/icon-list_img/custom/4.png"
+                              alt="demo"
+                            />
+                          </figure>
+
+                          <h4>
+                            <a href="javascritp:void(0)"
+                              >Löwen Dart HB 10 2022</a
+                            >
+                          </h4>
+                        </div>
+                      </div>
+                      <!-- end item -->
+
+                      <!-- start item -->
+                      <div class="col-6 col-md-4 col-lg-4">
+                        <div class="__item">
+                          <figure class="__image">
+                            <img
+                              class="lazy"
+                              src="img/blank.gif"
+                              width="87"
+                              height="192"
+                              data-src="img/icon-list_img/custom/5.png"
+                              alt="demo"
+                            />
+                          </figure>
+
+                          <h4>
+                            <a href="javascritp:void(0)">Fussballtische</a>
+                          </h4>
+                        </div>
+                      </div>
+                      <!-- end item -->
+
+                      <!-- start item -->
+                      <div class="col-6 col-md-4 col-lg-4">
+                        <div class="__item">
+                          <figure class="__image">
+                            <img
+                              class="lazy"
+                              src="img/blank.gif"
+                              width="130"
+                              height="196"
+                              data-src="img/icon-list_img/custom/8.png"
+                              alt="demo"
+                            />
+                          </figure>
+
+                          <h4><a href="javascritp:void(0)">Fun4four</a></h4>
+                        </div>
+                      </div>
                       <!-- end item -->
                     </div>
                   </div>
                 </div>
-                <!-- end counter -->
-              </div>
-            </div>
+                <!-- end icon list -->
 
-            <div class="col-12 col-lg-6">
-              <div class="spacer py-4 py-md-6 d-lg-none"></div>
-
-              <div class="about-img text-center">
-                <img class="lazy" width="719" height="741" src="img/blank.gif" data-src="img/icon-list_img/custom/4.png"
-                  alt="demo" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end section -->
-
-      <!-- start section -->
-      <section class="section section--bg-img jarallax" data-speed="0.3" data-img-position="50% 50%"
-        style="background-image: url(img/bg_8.jpg); background-color: #26282b">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div id="produkte" class="
-                    section-heading
-                    section-heading--center
-                    section-heading--white
-                    pt-4
-                  ">
-                <h5 class="__subtitle">PRODUKTE</h5>
-
-                <h2 class="__title">SkillCube <span>Produkte</span></h2>
-
-                <p>
-                  SkillCube zeichnet sich durch ein breities Angebot an
-                  unterschiedlichsten Unterhaltungs- und
-                  Geschicklichkeitsautomaten aus.
-                </p>
+                <div class="spacer py-5 py-md-8"></div>
               </div>
 
-              <div class="spacer py-6"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end section -->
-
-      <!-- start section -->
-      <section class="section section--no-pt">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <!-- start icon list -->
-              <div class="icon-list icon-list--s1">
-                <div class="__inner">
-                  <div class="row">
-                    <!-- start item -->
-                    <div class="col-6 col-md-4 col-lg-4">
-                      <div class="__item">
-                        <figure class="__image">
-                          <img class="lazy" src="img/blank.gif" width="113" height="195"
-                            data-src="img/icon-list_img/custom/1.png" alt="demo" />
-                        </figure>
-
-                        <h4><a href="javascritp:void(0)">Big Fish Multi</a></h4>
-                      </div>
-                    </div>
-                    <!-- end item -->
-
-                    <!-- start item -->
-                    <div class="col-6 col-md-4 col-lg-4">
-                      <div class="__item">
-                        <figure class="__image">
-                          <img class="lazy" src="img/blank.gif" width="94" height="195"
-                            data-src="img/icon-list_img/custom/2.png" alt="demo" />
-                        </figure>
-
-                        <h4><a href="javascritp:void(0)">Big 21</a></h4>
-                      </div>
-                    </div>
-                    <!-- end item -->
-
-                    <!-- start item -->
-                    <div class="col-6 col-md-4 col-lg-4">
-                      <div class="__item">
-                        <figure class="__image">
-                          <img class="lazy" src="img/blank.gif" width="116" height="201"
-                            data-src="img/icon-list_img/custom/3.png" alt="demo" />
-                        </figure>
-
-                        <h4><a href="javascritp:void(0)">Super Club</a></h4>
-                      </div>
-                    </div>
-                    <!-- end item -->
-
-                    <!-- start item -->
-                    <div class="col-6 col-md-4 col-lg-4">
-                      <div class="__item">
-                        <figure class="__image">
-                          <img class="lazy" src="img/blank.gif" width="91" height="200"
-                            data-src="img/icon-list_img/custom/4.png" alt="demo" />
-                        </figure>
-
-                        <h4><a href="javascritp:void(0)">Löwen Dart HB 10 2022</a></h4>
-                      </div>
-                    </div>
-                    <!-- end item -->
-
-                    <!-- start item -->
-                    <div class="col-6 col-md-4 col-lg-4">
-                      <div class="__item">
-                        <figure class="__image">
-                          <img class="lazy" src="img/blank.gif" width="87" height="192"
-                            data-src="img/icon-list_img/custom/5.png" alt="demo" />
-                        </figure>
-
-                        <h4><a href="javascritp:void(0)">Fussballtische</a></h4>
-                      </div>
-                    </div>
-                    <!-- end item -->
-
-                    <!-- start item -->
-                    <div class="col-6 col-md-4 col-lg-4">
-                      <div class="__item">
-                        <figure class="__image">
-                          <img class="lazy" src="img/blank.gif" width="130" height="196"
-                            data-src="img/icon-list_img/custom/8.png" alt="demo" />
-                        </figure>
-
-                        <h4><a href="javascritp:void(0)">Fun4four</a></h4>
-                      </div>
-                    </div>
-                    <!-- end item -->
-                  </div>
+              <div class="col-12 col-md-6">
+                <div class="content-container">
+                  <blockquote
+                    class="blockquot"
+                    style="font-size: inherit; line-height: 1.6"
+                  >
+                    <p>
+                      <strong
+                        >Unsere Kunden können auswählen, welche Unterhaltungs-
+                        (Dart, Billard, etc.) und Geschicklichkeitsgeräte sie in
+                        ihrem Betrieb aufstellen möchten.</strong
+                      >
+                      Durch das Aufstellen von solchen Geräten kann der
+                      Gastronom nebst dem bestehendem Service seinen Gästen
+                      zusätzliche Unterhaltung anbieten.
+                    </p>
+                  </blockquote>
                 </div>
               </div>
-              <!-- end icon list -->
 
-              <div class="spacer py-5 py-md-8"></div>
-            </div>
+              <div class="col-12 col-md-6">
+                <div class="spacer py-3 d-md-none"></div>
 
-            <div class="col-12 col-md-6">
-              <div class="content-container">
-                <blockquote class="blockquot" style="font-size: inherit; line-height: 1.6">
+                <div class="content-container">
                   <p>
-                    <strong>Unsere Kunden können auswählen, welche
-                      Unterhaltungs- (Dart, Billard, etc.) und
-                      Geschicklichkeitsgeräte sie in ihrem Betrieb aufstellen
-                      möchten.</strong> Durch das Aufstellen von solchen Geräten kann der
-                    Gastronom nebst dem bestehendem Service seinen Gästen
-                    zusätzliche Unterhaltung anbieten.
+                    Die Anlieferung und den Aufbau übernehmen wir, welche
+                    effizient und unkompliziert vollzogen wird. Dabei muss der
+                    Gastronom nichts investieren, kümmert sich nicht um die
+                    Instandhaltung der Geräte und generiert einen zusätzlichen
+                    Gewinn. Darüber hinaus profitieren unsere Kunden auch nach
+                    dem Aufbau der Geräte von unserem Rund-um-Service.
                   </p>
-                </blockquote>
+                </div>
               </div>
-            </div>
 
-            <div class="col-12 col-md-6">
-              <div class="spacer py-3 d-md-none"></div>
+              <div class="col-12 col-md-6">
+                <div class="spacer py-4"></div>
 
-              <div class="content-container">
-                <p>Die Anlieferung und den Aufbau übernehmen wir, welche effizient und unkompliziert vollzogen wird.
-                  Dabei muss der Gastronom nichts investieren, kümmert sich nicht um die Instandhaltung der Geräte und
-                  generiert einen zusätzlichen Gewinn. Darüber hinaus profitieren unsere Kunden auch nach dem Aufbau der
-                  Geräte von unserem Rund-um-Service.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6">
-              <div class="spacer py-4"></div>
-
-              <div class="content-container">
-                <p>
-                  <a class="custom-btn custom-btn--big custom-btn--s1" href="tel:0041412102500">Kontaktieren Sie uns</a>
-                </p>
+                <div class="content-container">
+                  <p>
+                    <a
+                      class="custom-btn custom-btn--big custom-btn--s1"
+                      href="tel:0041412102500"
+                      >Kontaktieren Sie uns</a
+                    >
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- end section -->
+        </section>
+        <!-- end section -->
 
-      <!-- start section -->
-      <section class="section section--no-pb" style="
+        <!-- start section -->
+        <section
+          class="section section--no-pb"
+          style="
             background-image: url(img/bg_9.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-          ">
-        <div class="container">
-          <div class="row align-items-md-end justify-content-md-between">
-            <div class="col-12 col-md-12 col-lg-12 col-xl-12">
-              <div id="dienstleistungen" class="section-heading section-heading--left pt-4">
-                <h5 class="__subtitle">DIENSTLEISTUNGEN</h5>
+          "
+        >
+          <div class="container">
+            <div class="row align-items-md-end justify-content-md-between">
+              <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                <div
+                  id="dienstleistungen"
+                  class="section-heading section-heading--left pt-4"
+                >
+                  <h5 class="__subtitle">DIENSTLEISTUNGEN</h5>
 
-                <h2 class="__title">Mit SkillCube haben Sie den richtigen Partner an Ihrer Seite</h2>
+                  <h2 class="__title">
+                    Mit SkillCube haben Sie den richtigen Partner an Ihrer Seite
+                  </h2>
 
-                <p>Generieren Sie sich einen Mehrwert durch unsere Dienstleistungen:</p>
+                  <p>
+                    Generieren Sie sich einen Mehrwert durch unsere
+                    Dienstleistungen:
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-auto">
+                <div
+                  id="slick-dots--container-3"
+                  class="mt-10 text-right"
+                ></div>
               </div>
             </div>
 
-            <div class="col-12 col-md-auto">
-              <div id="slick-dots--container-3" class="mt-10 text-right"></div>
-            </div>
+            <div class="spacer py-3 py-md-6"></div>
           </div>
 
-          <div class="spacer py-3 py-md-6"></div>
-        </div>
-
-        <!-- start services -->
-        <div class="services services--slider">
-          <div class="slider-special-layout">
-            <div class="slider-special-layout__inner">
-              <div class="slider-special-layout__container">
-                <div class="js-slick" data-slick='{
+          <!-- start services -->
+          <div class="services services--slider">
+            <div class="slider-special-layout">
+              <div class="slider-special-layout__inner">
+                <div class="slider-special-layout__container">
+                  <div
+                    class="js-slick"
+                    data-slick='{
 											"autoplay": true,
 											"dots": true,
 											"speed": 1200,
@@ -741,587 +893,756 @@
 													"slidesToScroll": 2
 												}
 											}]
-										}'>
-                  <!-- start item -->
-                  <div class="__item">
-                    <figure class="__image">
-                      <img src="img/services_img/delivery_2.jpg" alt="demo" />
-                    </figure>
-
-                    <div class="__content" data-num="01">
-                      <h4 class="__title"><a href="#">Schnelle Lieferung</a></h4>
-                    </div>
-                  </div>
-                  <!-- end item -->
-
-                  <!-- start item -->
-                  <div class="__item">
-                    <figure class="__image">
-                      <img src="img/services_img/installation.jpg" alt="demo" />
-                    </figure>
-
-                    <div class="__content" data-num="02">
-                      <h4 class="__title">
-                        <a href="#">Aufbau & Installation</a>
-                      </h4>
-                    </div>
-                  </div>
-                  <!-- end item -->
-
-                  <!-- start item -->
-                  <div class="__item">
-                    <figure class="__image">
-                      <img src="img/services_img/garantie.jpg" alt="demo" />
-                    </figure>
-
-                    <div class="__content" data-num="03">
-                      <h4 class="__title"><a href="#">Garantie</a></h4>
-                    </div>
-                  </div>
-                  <!-- end item -->
-
-                  <!-- start item -->
-                  <div class="__item">
-                    <figure class="__image">
-                      <img src="img/services_img/repair.jpg" alt="demo" />
-                    </figure>
-
-                    <div class="__content" data-num="04">
-                      <h4 class="__title">
-                        <a href="#">Reparatur & Wartung</a>
-                      </h4>
-                    </div>
-                  </div>
-                  <!-- end item -->
-
-                  <!-- start item -->
-                  <div class="__item">
-                    <figure class="__image">
-                      <img src="img/services_img/support.jpg" alt="demo" />
-                    </figure>
-
-                    <div class="__content" data-num="05">
-                      <h4 class="__title">
-                        <a href="#">24/7 Support</a>
-                      </h4>
-                    </div>
-                  </div>
-                  <!-- end item -->
-
-                  <!-- start item -->
-                  <div class="__item">
-                    <figure class="__image">
-                      <img src="img/services_img/rechtsberatung.jpg" alt="demo" />
-                    </figure>
-
-                    <div class="__content" data-num="06">
-                      <h4 class="__title">
-                        <a href="#">Rechtsberatung</a>
-                      </h4>
-                    </div>
-                  </div>
-                  <!-- end item -->
-
-                  <!-- start item -->
-                  <div class="__item">
-                    <figure class="__image">
-                      <img src="img/services_img/training.jpg" alt="demo" />
-                    </figure>
-
-                    <div class="__content" data-num="07">
-                      <h4 class="__title"><a href="#">Schulung</a></h4>
-                    </div>
-                  </div>
-                  <!-- end item -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end services -->
-      </section>
-      <!-- end section -->
-
-      <!-- start section -->
-      <section class="section">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div id="prozess" class="section-heading section-heading--center pt-4">
-                <h5 class="__subtitle">SO FUNKTIONIEREN WIR</h5>
-
-                <h2 class="__title">Schritte zur Zusammenarbeit mit SkillCube</h2>
-
-                <p>
-                  Wir haben einen standardisierten Prozess wie wir mit unseren Kunden arbeiten, um möglichst effizient
-                  zu sein.
-                </p>
-              </div>
-
-              <div class="spacer py-6"></div>
-            </div>
-
-            <div class="col-12">
-              <!-- start steps -->
-              <div class="steps">
-                <div class="__inner" style="min-width: 1000px">
-                  <div class="row">
+										}'
+                  >
                     <!-- start item -->
-                    <div class="col">
-                      <div class="__item">
-                        <div class="__num"><span>01</span>06</div>
+                    <div class="__item">
+                      <figure class="__image">
+                        <img src="img/services_img/delivery_2.jpg" alt="demo" />
+                      </figure>
 
-                        <div class="__line">
-                          <span class="__point"></span>
-                        </div>
-
-                        <div class="__title h4">Kontaktaufnahme</div>
+                      <div class="__content" data-num="01">
+                        <h4 class="__title">
+                          <a href="#">Schnelle Lieferung</a>
+                        </h4>
                       </div>
                     </div>
                     <!-- end item -->
 
                     <!-- start item -->
-                    <div class="col">
-                      <div class="__item">
-                        <div class="__num"><span>02</span>06</div>
+                    <div class="__item">
+                      <figure class="__image">
+                        <img
+                          src="img/services_img/installation.jpg"
+                          alt="demo"
+                        />
+                      </figure>
 
-                        <div class="__line">
-                          <span class="__point"></span>
-                        </div>
-
-                        <div class="__title h4">Informationsgespräch</div>
+                      <div class="__content" data-num="02">
+                        <h4 class="__title">
+                          <a href="#">Aufbau & Installation</a>
+                        </h4>
                       </div>
                     </div>
                     <!-- end item -->
 
                     <!-- start item -->
-                    <div class="col">
-                      <div class="__item">
-                        <div class="__num"><span>03</span>06</div>
+                    <div class="__item">
+                      <figure class="__image">
+                        <img src="img/services_img/garantie.jpg" alt="demo" />
+                      </figure>
 
-                        <div class="__line">
-                          <span class="__point"></span>
-                        </div>
-
-                        <div class="__title h4">Angebot</div>
+                      <div class="__content" data-num="03">
+                        <h4 class="__title"><a href="#">Garantie</a></h4>
                       </div>
                     </div>
                     <!-- end item -->
 
                     <!-- start item -->
-                    <div class="col">
-                      <div class="__item">
-                        <div class="__num"><span>04</span>06</div>
+                    <div class="__item">
+                      <figure class="__image">
+                        <img src="img/services_img/repair.jpg" alt="demo" />
+                      </figure>
 
-                        <div class="__line">
-                          <span class="__point"></span>
-                        </div>
-
-                        <div class="__title h4">Vereinbarung</div>
+                      <div class="__content" data-num="04">
+                        <h4 class="__title">
+                          <a href="#">Reparatur & Wartung</a>
+                        </h4>
                       </div>
                     </div>
                     <!-- end item -->
 
                     <!-- start item -->
-                    <div class="col">
-                      <div class="__item">
-                        <div class="__num"><span>05</span>06</div>
+                    <div class="__item">
+                      <figure class="__image">
+                        <img src="img/services_img/support.jpg" alt="demo" />
+                      </figure>
 
-                        <div class="__line">
-                          <span class="__point"></span>
-                        </div>
-
-                        <div class="__title h4">Lieferung</div>
+                      <div class="__content" data-num="05">
+                        <h4 class="__title">
+                          <a href="#">24/7 Support</a>
+                        </h4>
                       </div>
                     </div>
                     <!-- end item -->
 
                     <!-- start item -->
-                    <div class="col">
-                      <div class="__item">
-                        <div class="__num"><span>06</span>06</div>
+                    <div class="__item">
+                      <figure class="__image">
+                        <img
+                          src="img/services_img/rechtsberatung.jpg"
+                          alt="demo"
+                        />
+                      </figure>
 
-                        <div class="__line">
-                          <span class="__point"></span>
-                          <span class="__point __point--last"><i class="fontello-ok"></i></span>
-                        </div>
+                      <div class="__content" data-num="06">
+                        <h4 class="__title">
+                          <a href="#">Rechtsberatung</a>
+                        </h4>
+                      </div>
+                    </div>
+                    <!-- end item -->
 
-                        <div class="__title h4">Support</div>
+                    <!-- start item -->
+                    <div class="__item">
+                      <figure class="__image">
+                        <img src="img/services_img/training.jpg" alt="demo" />
+                      </figure>
+
+                      <div class="__content" data-num="07">
+                        <h4 class="__title"><a href="#">Schulung</a></h4>
                       </div>
                     </div>
                     <!-- end item -->
                   </div>
                 </div>
               </div>
-              <!-- end steps -->
+            </div>
+          </div>
+          <!-- end services -->
+        </section>
+        <!-- end section -->
+
+        <!-- start section -->
+        <section class="section">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div
+                  id="prozess"
+                  class="section-heading section-heading--center pt-4"
+                >
+                  <h5 class="__subtitle">SO FUNKTIONIEREN WIR</h5>
+
+                  <h2 class="__title">
+                    Schritte zur Zusammenarbeit mit SkillCube
+                  </h2>
+
+                  <p>
+                    Wir haben einen standardisierten Prozess wie wir mit unseren
+                    Kunden arbeiten, um möglichst effizient zu sein.
+                  </p>
+                </div>
+
+                <div class="spacer py-6"></div>
+              </div>
+
+              <div class="col-12">
+                <!-- start steps -->
+                <div class="steps">
+                  <div class="__inner" style="min-width: 1000px">
+                    <div class="row">
+                      <!-- start item -->
+                      <div class="col">
+                        <div class="__item">
+                          <div class="__num"><span>01</span>06</div>
+
+                          <div class="__line">
+                            <span class="__point"></span>
+                          </div>
+
+                          <div class="__title h4">Kontaktaufnahme</div>
+                        </div>
+                      </div>
+                      <!-- end item -->
+
+                      <!-- start item -->
+                      <div class="col">
+                        <div class="__item">
+                          <div class="__num"><span>02</span>06</div>
+
+                          <div class="__line">
+                            <span class="__point"></span>
+                          </div>
+
+                          <div class="__title h4">Informationsgespräch</div>
+                        </div>
+                      </div>
+                      <!-- end item -->
+
+                      <!-- start item -->
+                      <div class="col">
+                        <div class="__item">
+                          <div class="__num"><span>03</span>06</div>
+
+                          <div class="__line">
+                            <span class="__point"></span>
+                          </div>
+
+                          <div class="__title h4">Angebot</div>
+                        </div>
+                      </div>
+                      <!-- end item -->
+
+                      <!-- start item -->
+                      <div class="col">
+                        <div class="__item">
+                          <div class="__num"><span>04</span>06</div>
+
+                          <div class="__line">
+                            <span class="__point"></span>
+                          </div>
+
+                          <div class="__title h4">Vereinbarung</div>
+                        </div>
+                      </div>
+                      <!-- end item -->
+
+                      <!-- start item -->
+                      <div class="col">
+                        <div class="__item">
+                          <div class="__num"><span>05</span>06</div>
+
+                          <div class="__line">
+                            <span class="__point"></span>
+                          </div>
+
+                          <div class="__title h4">Lieferung</div>
+                        </div>
+                      </div>
+                      <!-- end item -->
+
+                      <!-- start item -->
+                      <div class="col">
+                        <div class="__item">
+                          <div class="__num"><span>06</span>06</div>
+
+                          <div class="__line">
+                            <span class="__point"></span>
+                            <span class="__point __point--last"
+                              ><i class="fontello-ok"></i
+                            ></span>
+                          </div>
+
+                          <div class="__title h4">Support</div>
+                        </div>
+                      </div>
+                      <!-- end item -->
+                    </div>
+                  </div>
+                </div>
+                <!-- end steps -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end section -->
+
+        <!-- start section -->
+        <div class="section pb-0 pt-0">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-heading">
+                  <h2 class="__title">Rechtliches</h2>
+                  <p>
+                    Basierend auf Art. 106 der Bundesverfassung wurde das
+                    aktuell geltende Geldspielgesetz geschaffen (BGS).
+                    Geldspiele sind Spiele, bei denen gegen Leistung eines
+                    geldwerten Einsatzes oder bei Abschluss eines
+                    Rechtsgeschäfts ein Geldgewinn oder ein anderer geldwerter
+                    Vorteil in Aussicht steht (Art. 3 BGS).
+                    Geschicklichkeitsspiele sind Geldspiele, bei denen der
+                    Spielgewinn ganz oder überwiegend von der Geschicklichkeit
+                    der Spielerin oder des Spielers abhängt (Art. 3 BGS).
+                    Geschicklichkeitsspiele, die automatisiert, interkantonal
+                    oder online durchgeführt werden, gehören zur Kategorie der
+                    Grossspiele (Art. 3 BGS). Der Betrieb von
+                    Glückspielautomaten ist in der Schweiz nur in
+                    konzessionierten Spielbanken zugelassen. Für den Verkauf von
+                    Glückspielautomaten gelten unsere allgemeinen
+                    Geschäftsbedingungen.
+                  </p>
+                </div>
+
+                <div class="spacer py-4"></div>
+              </div>
+              <!-- Card 1 -->
+              <a
+                class="custom-card col-4"
+                target="_blank"
+                href="https://www.bj.admin.ch/bj/de/home/wirtschaft/geldspiele/rechtsgrundlagen.html "
+              >
+                Gesetze
+              </a>
+              <!-- Card 2 -->
+              <a
+                class="custom-card col-4"
+                target="_blank"
+                href=" https://www.gespa.ch/de "
+              >
+                Aufsicht
+              </a>
+              <!-- Card 3 -->
+              <a
+                class="custom-card col-4"
+                target="_blank"
+                href="https://www.sos-spielsucht.ch/en/ "
+              >
+                Spielerschutz
+              </a>
             </div>
           </div>
         </div>
-      </section>
-      <!-- end section -->
+        <!-- start section -->
 
-      <!-- start section -->
-      <section class="section pb-0">
-        <div class="container">
-          <div class="row justify-content-lg-center">
-            <div class="col-12 col-md-auto col-lg-2">
-              <div class="mb-7 mb-md-0">
-                <i class="testimonial-ico" data-text="">“</i>
+        <!-- start section -->
+        <section class="section pb-0">
+          <div class="container">
+            <div class="row justify-content-lg-center">
+              <div class="col-12 col-md-auto col-lg-2">
+                <div class="mb-7 mb-md-0">
+                  <i class="testimonial-ico" data-text="">“</i>
+                </div>
               </div>
-            </div>
 
-            <div class="col-12 col-md">
-              <div id="referenzen" class="section-heading section-heading--left pt-4">
-                <h5 class="__subtitle">Referenzen</h5>
+              <div class="col-12 col-md">
+                <div
+                  id="referenzen"
+                  class="section-heading section-heading--left pt-4"
+                >
+                  <h5 class="__subtitle">Referenzen</h5>
 
-                <h2 class="__title">Was bisherige Kunden über Skill<span>Cube </span>sagen</h2>
+                  <h2 class="__title">
+                    Was bisherige Kunden über Skill<span>Cube </span>sagen
+                  </h2>
+                </div>
               </div>
-            </div>
 
-            <div class="col-12 col-lg-auto">
-              <div id="slick-dots--container-0" class="mt-10 text-right"></div>
-            </div>
+              <div class="col-12 col-lg-auto">
+                <div
+                  id="slick-dots--container-0"
+                  class="mt-10 text-right"
+                ></div>
+              </div>
 
-            <div class="col-12 col-lg-8">
-              <div class="spacer py-3 py-lg-4"></div>
+              <div class="col-12 col-lg-8">
+                <div class="spacer py-3 py-lg-4"></div>
 
-              <!-- start review -->
-              <div class="review review--slider">
-                <div class="js-slick" data-slick='{
+                <!-- start review -->
+                <div class="review review--slider">
+                  <div
+                    class="js-slick"
+                    data-slick='{
 											"autoplay": true,
 											"dots": true,
 											"speed": 1200,
 											"appendDots": "#slick-dots--container-0",
-										}'>
-                  <!-- start item -->
-                  <div class="review__item">
-                    <p>
-                      Seit ich die Automaten von SkillCube in meinem Restaurant aufgestellt habe, verzeichne ich sowohl
-                      mehr Gäste und somit einen höheren Umsatz, als auch einen höheren Gewinn durch die Einnahmen von
-                      den Unterhaltungs- und Geschicklichkeitsautomaten.
-                    </p>
+										}'
+                  >
+                    <!-- start item -->
+                    <div class="review__item">
+                      <p>
+                        Seit ich die Automaten von SkillCube in meinem
+                        Restaurant aufgestellt habe, verzeichne ich sowohl mehr
+                        Gäste und somit einen höheren Umsatz, als auch einen
+                        höheren Gewinn durch die Einnahmen von den
+                        Unterhaltungs- und Geschicklichkeitsautomaten.
+                      </p>
 
-                    <div class="review__item__author-name h4">
-                      Sandro Portmann
+                      <div class="review__item__author-name h4">
+                        Sandro Portmann
+                      </div>
                     </div>
-                  </div>
-                  <!-- end item -->
+                    <!-- end item -->
 
-                  <!-- start item -->
-                  <div class="review__item">
-                    <p>
-                      Für mich ist es sehr wichtig, dass die Geräte allen gesetzlichen Regelungen entsprechen und ich
-                      mir darüber keine Sorgen machen muss. Mit SkillCube habe ich da einen kompetenten Partner an
-                      meiner Seite, welcher langjährige Erfahrung in dieser Branche aufweist.
-                    </p>
+                    <!-- start item -->
+                    <div class="review__item">
+                      <p>
+                        Für mich ist es sehr wichtig, dass die Geräte allen
+                        gesetzlichen Regelungen entsprechen und ich mir darüber
+                        keine Sorgen machen muss. Mit SkillCube habe ich da
+                        einen kompetenten Partner an meiner Seite, welcher
+                        langjährige Erfahrung in dieser Branche aufweist.
+                      </p>
 
-                    <div class="review__item__author-name h4">
-                      Peter Hausmann, Take-Away Besitzer
+                      <div class="review__item__author-name h4">
+                        Peter Hausmann, Take-Away Besitzer
+                      </div>
                     </div>
-                  </div>
-                  <!-- end item -->
+                    <!-- end item -->
 
-                  <!-- start item -->
-                  <div class="review__item">
-                    <p>
-                      Ich höre oft von Leuten, dass sie die Geschicklichkeitsspiele auch ohne Geldanreiz spielen würden,
-                      da es ihnen spass macht. Das ich damit ein Zusatzeinkommen generieren kann und die Gäste
-                      gleichzeitig bei genügend hoher Konzentration und Geschick Geld gewinnen können, finde ich toll.
-                    </p>
+                    <!-- start item -->
+                    <div class="review__item">
+                      <p>
+                        Ich höre oft von Leuten, dass sie die
+                        Geschicklichkeitsspiele auch ohne Geldanreiz spielen
+                        würden, da es ihnen spass macht. Das ich damit ein
+                        Zusatzeinkommen generieren kann und die Gäste
+                        gleichzeitig bei genügend hoher Konzentration und
+                        Geschick Geld gewinnen können, finde ich toll.
+                      </p>
 
-                    <div class="review__item__author-name h4">
-                      Andreas Hauser, Club-Besitzer
+                      <div class="review__item__author-name h4">
+                        Andreas Hauser, Club-Besitzer
+                      </div>
                     </div>
+                    <!-- end item -->
                   </div>
-                  <!-- end item -->
                 </div>
+                <!-- end review -->
               </div>
-              <!-- end review -->
             </div>
           </div>
-        </div>
-      </section>
-      <!-- end section -->
-       <!-- start section -->
-       <section class="section section--no-pb">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-7 col-lg-5">
-              <div id="galerie" class="section-heading section-heading--left pt-4">
-                <h5 class="__subtitle">GALERIE</h5>
+        </section>
+        <!-- end section -->
+        <!-- start section -->
+        <section class="section section--no-pb">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-7 col-lg-5">
+                <div
+                  id="galerie"
+                  class="section-heading section-heading--left pt-4"
+                >
+                  <h5 class="__subtitle">GALERIE</h5>
 
-                <h2 class="__title">Galerie von <span>unseren Produkten</span></h2>
+                  <h2 class="__title">
+                    Galerie von <span>unseren Produkten</span>
+                  </h2>
 
-                <p>
-                  Verschaffen Sie sich einen Eindruck mit welchen Automaten wir arbeiten und wie diese aussehen.
-                </p>
+                  <p>
+                    Verschaffen Sie sich einen Eindruck mit welchen Automaten
+                    wir arbeiten und wie diese aussehen.
+                  </p>
+                </div>
+
+                <div class="spacer py-6"></div>
               </div>
-
-              <div class="spacer py-6"></div>
             </div>
           </div>
-        </div>
 
-        <!-- start gallery -->
-        <div id="gallery-grid-1" class="gallery gallery--grid">
-          <div class="row no-gutters js-isotope" data-isotope-options='{
+          <!-- start gallery -->
+          <div id="gallery-grid-1" class="gallery gallery--grid">
+            <div
+              class="row no-gutters js-isotope"
+              data-isotope-options='{
 								"itemSelector": ".js-isotope__item",
 								"transitionDuration": "0.8s",
 								"percentPosition": true,
 								"masonry": { "columnWidth": ".js-isotope__sizer" }
-							}'>
-            <div class="col-12 col-sm-1 js-isotope__sizer"></div>
+							}'
+            >
+              <div class="col-12 col-sm-1 js-isotope__sizer"></div>
 
-            <!-- start item -->
-            <div class="
-                  col-12 col-sm-6 col-lg-4 col-xl-3
-                  js-isotope__item
-                  category-2
-                ">
-              <div class="__item" data-x="1" data-y="1">
-                <figure class="__image">
-                  <img class="lazy" src="img/blank.gif" data-src="img/gallery_img/1.1.jpg" alt="demo" />
-                </figure>
+              <!-- start item -->
+              <div
+                class="col-12 col-sm-6 col-lg-4 col-xl-3 js-isotope__item category-2"
+              >
+                <div class="__item" data-x="1" data-y="1">
+                  <figure class="__image">
+                    <img
+                      class="lazy"
+                      src="img/blank.gif"
+                      data-src="img/gallery_img/1.1.jpg"
+                      alt="demo"
+                    />
+                  </figure>
 
-                <div class="__content">
-                  <div class="row">
-                    <div class="col">
-                      <!-- <div class="h4 __title">Combo in Bars</div> -->
-                    </div>
+                  <div class="__content">
+                    <div class="row">
+                      <div class="col">
+                        <!-- <div class="h4 __title">Combo in Bars</div> -->
+                      </div>
 
-                    <div class="col-auto">
-                      <a class="__link" href="img/gallery_img/1.1.jpg" data-fancybox="gallery-masonry">
-                        <i class="fontello-resize"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end item -->
-
-            <!-- start item -->
-            <div class="
-                  col-12 col-sm-6 col-lg-4 col-xl-3
-                  js-isotope__item
-                  category-1
-                ">
-              <div class="__item" data-x="1" data-y="1">
-                <figure class="__image">
-                  <img class="lazy" src="img/blank.gif" data-src="img/gallery_img/2.2.jpg" alt="demo" />
-                </figure>
-
-                <div class="__content">
-                  <div class="row">
-                    <div class="col">
-                      <!-- <div class="h4 __title">Snack Markets</div> -->
-                    </div>
-
-                    <div class="col-auto">
-                      <a class="__link" href="img/gallery_img/2.2.jpg" data-fancybox="gallery-masonry">
-                        <i class="fontello-resize"></i>
-                      </a>
+                      <div class="col-auto">
+                        <a
+                          class="__link"
+                          href="img/gallery_img/1.1.jpg"
+                          data-fancybox="gallery-masonry"
+                        >
+                          <i class="fontello-resize"></i>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- end item -->
+              <!-- end item -->
 
-            <!-- start item -->
-            <div class="
-                  col-12 col-sm-6 col-lg-4 col-xl-6
-                  js-isotope__item
-                  category-3
-                ">
-              <div class="__item" data-x="1" data-y="1">
-                <figure class="__image">
-                  <img class="lazy" src="img/blank.gif" data-src="img/gallery_img/3.3.jpg" alt="demo" />
-                </figure>
+              <!-- start item -->
+              <div
+                class="col-12 col-sm-6 col-lg-4 col-xl-3 js-isotope__item category-1"
+              >
+                <div class="__item" data-x="1" data-y="1">
+                  <figure class="__image">
+                    <img
+                      class="lazy"
+                      src="img/blank.gif"
+                      data-src="img/gallery_img/2.2.jpg"
+                      alt="demo"
+                    />
+                  </figure>
 
-                <div class="__content">
-                  <div class="row">
-                    <div class="col">
-                      <!-- <div class="h4 __title">Beverage Machine</div> -->
-                    </div>
+                  <div class="__content">
+                    <div class="row">
+                      <div class="col">
+                        <!-- <div class="h4 __title">Snack Markets</div> -->
+                      </div>
 
-                    <div class="col-auto">
-                      <a class="__link" href="img/gallery_img/3.3.jpg" data-fancybox="gallery-masonry">
-                        <i class="fontello-resize"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end item -->
-
-            <!-- start item -->
-            <div class="
-                  col-12 col-sm-6 col-lg-4 col-xl-3
-                  js-isotope__item
-                  category-1
-                ">
-              <div class="__item" data-x="1" data-y="1">
-                <figure class="__image">
-                  <img class="lazy" src="img/blank.gif" data-src="img/gallery_img/4.4.jpg" alt="demo" />
-                </figure>
-
-                <div class="__content">
-                  <div class="row">
-                    <div class="col">
-                      <!-- <div class="h4 __title">Shop and Markets</div> -->
-                    </div>
-
-                    <div class="col-auto">
-                      <a class="__link" href="img/gallery_img/4.4.jpg" data-fancybox="gallery-masonry">
-                        <i class="fontello-resize"></i>
-                      </a>
+                      <div class="col-auto">
+                        <a
+                          class="__link"
+                          href="img/gallery_img/2.2.jpg"
+                          data-fancybox="gallery-masonry"
+                        >
+                          <i class="fontello-resize"></i>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- end item -->
+              <!-- end item -->
 
-            <!-- start item -->
-            <div class="col-12 col-md-4 col-xl-3 js-isotope__item category-2">
-              <div class="__item" data-x="1" data-y="1">
-                <figure class="__image">
-                  <img class="lazy" src="img/blank.gif" data-src="img/gallery_img/5.5.jpg" alt="demo" />
-                </figure>
+              <!-- start item -->
+              <div
+                class="col-12 col-sm-6 col-lg-4 col-xl-6 js-isotope__item category-3"
+              >
+                <div class="__item" data-x="1" data-y="1">
+                  <figure class="__image">
+                    <img
+                      class="lazy"
+                      src="img/blank.gif"
+                      data-src="img/gallery_img/3.3.jpg"
+                      alt="demo"
+                    />
+                  </figure>
 
-                <div class="__content">
-                  <div class="row">
-                    <div class="col">
-                      <!-- <div class="h4 __title">Toys</div> -->
-                    </div>
+                  <div class="__content">
+                    <div class="row">
+                      <div class="col">
+                        <!-- <div class="h4 __title">Beverage Machine</div> -->
+                      </div>
 
-                    <div class="col-auto">
-                      <a class="__link" href="img/gallery_img/5.5.jpg" data-fancybox="gallery-masonry">
-                        <i class="fontello-resize"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end item -->
-
-            <!-- start item -->
-            <div class="col-12 col-md-8 col-xl-6 js-isotope__item category-3">
-              <div class="__item" data-x="2" data-y="1">
-                <figure class="__image">
-                  <img class="lazy" src="img/blank.gif" data-src="img/gallery_img/6.6.jpg" alt="demo" />
-                </figure>
-
-                <div class="__content">
-                  <div class="row">
-                    <div class="col">
-                      <!-- <div class="h4 __title">Water Machine</div> -->
-                    </div>
-
-                    <div class="col-auto">
-                      <a class="__link" href="img/gallery_img/6.6.jpg" data-fancybox="gallery-masonry">
-                        <i class="fontello-resize"></i>
-                      </a>
+                      <div class="col-auto">
+                        <a
+                          class="__link"
+                          href="img/gallery_img/3.3.jpg"
+                          data-fancybox="gallery-masonry"
+                        >
+                          <i class="fontello-resize"></i>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- end item -->
+              <!-- end item -->
 
-            <!-- start item -->
-            <div class="
-                  col-12 col-sm-6 col-lg-4 col-xl-3
-                  js-isotope__item
-                  category-1
-                ">
-              <div class="__item" data-x="1" data-y="1">
-                <figure class="__image">
-                  <img class="lazy" src="img/blank.gif" data-src="img/gallery_img/7.7.jpg" alt="demo" />
-                </figure>
+              <!-- start item -->
+              <div
+                class="col-12 col-sm-6 col-lg-4 col-xl-3 js-isotope__item category-1"
+              >
+                <div class="__item" data-x="1" data-y="1">
+                  <figure class="__image">
+                    <img
+                      class="lazy"
+                      src="img/blank.gif"
+                      data-src="img/gallery_img/4.4.jpg"
+                      alt="demo"
+                    />
+                  </figure>
 
-                <div class="__content">
-                  <div class="row">
-                    <div class="col">
-                      <!-- <div class="h4 __title">Supermarkets</div> -->
-                    </div>
+                  <div class="__content">
+                    <div class="row">
+                      <div class="col">
+                        <!-- <div class="h4 __title">Shop and Markets</div> -->
+                      </div>
 
-                    <div class="col-auto">
-                      <a class="__link" href="img/gallery_img/7.7.jpg" data-fancybox="gallery-masonry">
-                        <i class="fontello-resize"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end item -->
-
-            <!-- start item -->
-            <div class="
-                  col-12 col-sm-6 col-lg-4 col-xl-3
-                  js-isotope__item
-                  category-2
-                ">
-              <div class="__item" data-x="1" data-y="1">
-                <figure class="__image">
-                  <img class="lazy" src="img/blank.gif" data-src="img/gallery_img/8.8.jpg" alt="demo" />
-                </figure>
-
-                <div class="__content">
-                  <div class="row">
-                    <div class="col">
-                      <!-- <div class="h4 __title">Vending Business</div> -->
-                    </div>
-
-                    <div class="col-auto">
-                      <a class="__link" href="img/gallery_img/8.8.jpg" data-fancybox="gallery-masonry">
-                        <i class="fontello-resize"></i>
-                      </a>
+                      <div class="col-auto">
+                        <a
+                          class="__link"
+                          href="img/gallery_img/4.4.jpg"
+                          data-fancybox="gallery-masonry"
+                        >
+                          <i class="fontello-resize"></i>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- end item -->
+
+              <!-- start item -->
+              <div class="col-12 col-md-4 col-xl-3 js-isotope__item category-2">
+                <div class="__item" data-x="1" data-y="1">
+                  <figure class="__image">
+                    <img
+                      class="lazy"
+                      src="img/blank.gif"
+                      data-src="img/gallery_img/5.5.jpg"
+                      alt="demo"
+                    />
+                  </figure>
+
+                  <div class="__content">
+                    <div class="row">
+                      <div class="col">
+                        <!-- <div class="h4 __title">Toys</div> -->
+                      </div>
+
+                      <div class="col-auto">
+                        <a
+                          class="__link"
+                          href="img/gallery_img/5.5.jpg"
+                          data-fancybox="gallery-masonry"
+                        >
+                          <i class="fontello-resize"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+
+              <!-- start item -->
+              <div class="col-12 col-md-8 col-xl-6 js-isotope__item category-3">
+                <div class="__item" data-x="2" data-y="1">
+                  <figure class="__image">
+                    <img
+                      class="lazy"
+                      src="img/blank.gif"
+                      data-src="img/gallery_img/6.6.jpg"
+                      alt="demo"
+                    />
+                  </figure>
+
+                  <div class="__content">
+                    <div class="row">
+                      <div class="col">
+                        <!-- <div class="h4 __title">Water Machine</div> -->
+                      </div>
+
+                      <div class="col-auto">
+                        <a
+                          class="__link"
+                          href="img/gallery_img/6.6.jpg"
+                          data-fancybox="gallery-masonry"
+                        >
+                          <i class="fontello-resize"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+
+              <!-- start item -->
+              <div
+                class="col-12 col-sm-6 col-lg-4 col-xl-3 js-isotope__item category-1"
+              >
+                <div class="__item" data-x="1" data-y="1">
+                  <figure class="__image">
+                    <img
+                      class="lazy"
+                      src="img/blank.gif"
+                      data-src="img/gallery_img/7.7.jpg"
+                      alt="demo"
+                    />
+                  </figure>
+
+                  <div class="__content">
+                    <div class="row">
+                      <div class="col">
+                        <!-- <div class="h4 __title">Supermarkets</div> -->
+                      </div>
+
+                      <div class="col-auto">
+                        <a
+                          class="__link"
+                          href="img/gallery_img/7.7.jpg"
+                          data-fancybox="gallery-masonry"
+                        >
+                          <i class="fontello-resize"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+
+              <!-- start item -->
+              <div
+                class="col-12 col-sm-6 col-lg-4 col-xl-3 js-isotope__item category-2"
+              >
+                <div class="__item" data-x="1" data-y="1">
+                  <figure class="__image">
+                    <img
+                      class="lazy"
+                      src="img/blank.gif"
+                      data-src="img/gallery_img/8.8.jpg"
+                      alt="demo"
+                    />
+                  </figure>
+
+                  <div class="__content">
+                    <div class="row">
+                      <div class="col">
+                        <!-- <div class="h4 __title">Vending Business</div> -->
+                      </div>
+
+                      <div class="col-auto">
+                        <a
+                          class="__link"
+                          href="img/gallery_img/8.8.jpg"
+                          data-fancybox="gallery-masonry"
+                        >
+                          <i class="fontello-resize"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
             </div>
-            <!-- end item -->
           </div>
-        </div>
-        <!-- end gallery -->
-      </section>
-      <!-- end section -->
-    </main>
-    <!-- end main -->
+          <!-- end gallery -->
+        </section>
+        <!-- end section -->
+      </main>
+      <!-- end main -->
 
-    <!-- start footer -->
-    <footer class="footer footer--s2">
-      <div class="container">
-        <div class="footer__line footer__line--first">
-          <div class="row">
-            <div class="col-12 col-md-4 col-lg-3">
-              <div class="footer__item">
-                <a class="footer__logo site-logo" href="index.html">
-                  <img class="lazy" src="img/blank.gif" data-src="img/site_logo/logo_2.png" width="155" height="40"
-                    alt="demo" />
-                </a>
+      <!-- start footer -->
+      <footer class="footer footer--s2">
+        <div class="container">
+          <div class="footer__line footer__line--first">
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="footer__item">
+                  <a class="footer__logo site-logo" href="index.html">
+                    <img
+                      class="lazy"
+                      src="img/blank.gif"
+                      data-src="img/site_logo/logo_2.png"
+                      width="155"
+                      height="40"
+                      alt="demo"
+                    />
+                  </a>
+                </div>
+
+                <div class="footer__item">
+                  <p class="__copy">Copyright © 2022 SkillCube</p>
+                </div>
               </div>
 
-              <div class="footer__item">
-                <p class="__copy">Copyright © 2022 SkillCube</p>
-              </div>
-            </div>
+              <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+                <div class="footer__item">
+                  <address class="footer__address">
+                    <p>0041 41 210 25 00</p>
+                    <p>
+                      <a href="mailto:info@skillcube.co">info@skillcube.co</a>
+                    </p>
+                  </address>
+                </div>
 
-            <div class="col-12 col-md-5 col-lg-4 col-xl-3">
-              <div class="footer__item">
-                <address class="footer__address">
-                  <p>0041 41 210 25 00</p>
-                  <p><a href="mailto:info@skillcube.co">info@skillcube.co</a></p>
-                </address>
-              </div>
-
-              <!-- <div class="footer__item"> -->
+                <!-- <div class="footer__item"> -->
                 <!-- start social buttons -->
                 <!-- <div class="s-btns s-btns--white">
                   <ul class="d-flex flex-row flex-wrap align-items-center">
@@ -1340,102 +1661,113 @@
                   </ul>
                 </div> -->
                 <!-- end social buttons -->
-              <!-- </div> -->
-            </div>
+                <!-- </div> -->
+              </div>
 
-            <div class="col-12 col-md-8 col-lg-5 offset-xl-1">
-              <div class="row">
-                <div class="col-auto col-md-6 col-lg-5">
-                  <div class="footer__item">
-                    <nav class="footer__navigation">
-                      <ul>
-                        <!-- li class="active" -->
-                        <li><a href="#uber-uns">Über uns</a></li>
-                        <li><a href="#produkte">Produkte</a></li>
-                        <li><a href="#dienstleistungen">Dienstleistungen</a></li>
-                      </ul>
-                    </nav>
+              <div class="col-12 col-md-8 col-lg-5 offset-xl-1">
+                <div class="row">
+                  <div class="col-auto col-md-6 col-lg-5">
+                    <div class="footer__item">
+                      <nav class="footer__navigation">
+                        <ul>
+                          <!-- li class="active" -->
+                          <li><a href="#uber-uns">Über uns</a></li>
+                          <li><a href="#produkte">Produkte</a></li>
+                          <li>
+                            <a href="#dienstleistungen">Dienstleistungen</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
                   </div>
-                </div>
 
-                <div class="col-auto col-md-6">
-                  <div class="footer__item">
-                    <nav class="footer__navigation">
-                      <ul>
-                        <!-- li class="active" -->
-                        <li><a href="#galerie">Galerie</a></li>
-                        <li><a href="#prozess">Prozess</a></li>
-                        <li><a class="mobile-page-link" href="kontakt.html">Kontakt</a></li>
-                        
-                      </ul>
-                    </nav>
+                  <div class="col-auto col-md-6">
+                    <div class="footer__item">
+                      <nav class="footer__navigation">
+                        <ul>
+                          <!-- li class="active" -->
+                          <li><a href="#galerie">Galerie</a></li>
+                          <li><a href="#prozess">Prozess</a></li>
+                          <li>
+                            <a class="mobile-page-link" href="kontakt.html"
+                              >Kontakt</a
+                            >
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <!-- end footer -->
-  </div>
+      </footer>
+      <!-- end footer -->
+    </div>
 
-  <div id="btn-to-top-wrap" class="compensate-for-scrollbar">
-    <a id="btn-to-top" class="circled" href="javascript:void(0);" data-visible-offset="800"></a>
-  </div>
+    <div id="btn-to-top-wrap" class="compensate-for-scrollbar">
+      <a
+        id="btn-to-top"
+        class="circled"
+        href="javascript:void(0);"
+        data-visible-offset="800"
+      ></a>
+    </div>
 
-  <script>
-    (function (w, d) {
-      var b = d.getElementsByTagName("body")[0],
-        s = d.createElement("script"),
-        v = !("IntersectionObserver" in w) ? "8.17.0" : "12.3.0",
-        o = {
-          elements_selector: ".lazy",
-          threshold: 500,
-          callback_enter: function (element) { },
-          callback_set: function (element) {
-            oTimeout = setTimeout(function () {
-              clearTimeout(oTimeout);
+    <script>
+      (function (w, d) {
+        var b = d.getElementsByTagName("body")[0],
+          s = d.createElement("script"),
+          v = !("IntersectionObserver" in w) ? "8.17.0" : "12.3.0",
+          o = {
+            elements_selector: ".lazy",
+            threshold: 500,
+            callback_enter: function (element) {},
+            callback_set: function (element) {
+              oTimeout = setTimeout(function () {
+                clearTimeout(oTimeout);
 
-              AOS.refresh();
-            }, 1000);
+                AOS.refresh();
+              }, 1000);
+            },
+            callback_loaded: function (element) {},
+            callback_error: function (element) {
+              element.src =
+                "https://placeholdit.imgix.net/~text?txtsize=21&txt=Image%20not%20load&w=200&h=200";
+            },
+          };
+        s.type = "text/javascript";
+        s.async = true; // This includes the script as async. See the "recipes" section for more information about async loading of LazyLoad.
+        s.src =
+          "https://cdn.jsdelivr.net/npm/vanilla-lazyload@" +
+          v +
+          "/dist/lazyload.min.js";
+        b.appendChild(s);
+        w.lazyLoadOptions = o;
+
+        w.addEventListener(
+          "LazyLoad::Initialized",
+          function (event) {
+            w.lazyLoadInstance = event.detail.instance;
           },
-          callback_loaded: function (element) { },
-          callback_error: function (element) {
-            element.src =
-              "https://placeholdit.imgix.net/~text?txtsize=21&txt=Image%20not%20load&w=200&h=200";
-          },
-        };
-      s.type = "text/javascript";
-      s.async = true; // This includes the script as async. See the "recipes" section for more information about async loading of LazyLoad.
-      s.src =
-        "https://cdn.jsdelivr.net/npm/vanilla-lazyload@" +
-        v +
-        "/dist/lazyload.min.js";
-      b.appendChild(s);
-      w.lazyLoadOptions = o;
+          false
+        );
+      })(window, document);
+    </script>
 
-      w.addEventListener(
-        "LazyLoad::Initialized",
-        function (event) {
-          w.lazyLoadInstance = event.detail.instance;
-        },
-        false
-      );
-    })(window, document);
-  </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="js/jquery-2.2.4.min.js"><\/script>');
+    </script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script>
-    window.jQuery ||
-      document.write('<script src="js/jquery-2.2.4.min.js"><\/script>');
-  </script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-
-  <script type="text/javascript" src="js/main.js"></script>
-</body>
-
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>
