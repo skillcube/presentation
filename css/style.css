@@ -11286,11 +11286,19 @@ label {
   color: #d3d3d3;
 }
 
-@media(max-width: 900px) {
+@media (min-width: 900px) {
+  .mobile-only { 
+    display: none;
+  }
+}
+
+@media(max-width: 899px) {
   .start-screen-mobile-bg {
     background: url(../img/start-screen_img/3/bg_1.jpg);
   }
-
+  .desktop-only {
+    display: none;
+  }
   .custom-card {
     font-size: 1.6rem;
   }
