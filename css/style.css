@@ -11278,6 +11278,14 @@ label {
   color: #fff;
 }
 
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+.cursor-not-allowed:hover {
+  color: #d3d3d3;
+}
+
 @media(max-width: 900px) {
   .start-screen-mobile-bg {
     background: url(../img/start-screen_img/3/bg_1.jpg);
