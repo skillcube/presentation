@@ -2498,7 +2498,7 @@ a:hover {
     font-size: 4.5rem
   }
   .hero__inner {
-    height: 400px
+    height: 200px
   }
 }
 @media (min-width:768px) {
