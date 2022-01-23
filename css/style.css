@@ -11013,8 +11013,7 @@ label {
 
 @media (max-width:900px) {
   .about-img img.lazy { 
-    width: auto;
-    height: 50vh;
+   display: none;
   }
 }
 @media (max-width:576px) {
