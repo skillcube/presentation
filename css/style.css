@@ -11265,7 +11265,7 @@ label {
   align-items: center;
   background: #f95a3f;
   border: 10px solid #fff;
-  height: 150px;
+  height: 105px;
   line-height: 85px;
   font-size: 1.8rem;
   font-weight: 700;
@@ -11297,7 +11297,7 @@ label {
 
 @media(max-width: 767px) {
   .custom-card {
-    height: 100px;
+    height: 75px;
   }
 }
 
