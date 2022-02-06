@@ -11295,6 +11295,12 @@ label {
   margin-bottom: 50px;
 }
 
+@media(max-width: 767px) {
+  .custom-card {
+    height: 100px;
+  }
+}
+
 @media (min-width: 900px) {
   .mobile-only { 
     display: none;
