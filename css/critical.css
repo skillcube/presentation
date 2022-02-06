@@ -1926,7 +1926,7 @@ a:hover {
 .custom-btn.custom-btn--s2:focus,
 .custom-btn.custom-btn--s2:hover {
   background-color: #fff;
-  border-color: #fff;
+  border-color: #333;
   color: #333
 }
 .custom-btn.custom-btn--s3 {

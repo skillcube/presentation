@@ -11286,6 +11286,15 @@ label {
   color: #d3d3d3;
 }
 
+.start-screen__slide {
+  align-items: center;
+}
+
+.hero-contact-button.mobile-only {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
 @media (min-width: 900px) {
   .mobile-only { 
     display: none;
@@ -11301,5 +11310,8 @@ label {
   }
   .custom-card {
     font-size: 1.6rem;
+  }
+  .start-screen__slide {
+    align-items: flex-end;
   }
 }
