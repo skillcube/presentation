@@ -11299,6 +11299,12 @@ label {
   .custom-card {
     height: 75px;
   }
+  .hero-title {
+    font-size: 30px;
+  }
+  .hero-subtitle {
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 900px) {
