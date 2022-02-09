@@ -11419,11 +11419,6 @@ label {
   align-items: center;
 }
 
-.hero-contact-button.mobile-only {
-  margin-top: 150px;
-  margin-bottom: 50px;
-}
-
 .hero-subtitle {
   font-weight: 400;
 }
@@ -11441,6 +11436,14 @@ label {
   .h2,
   h2 {
     font-size: 30px;
+  }
+
+  h1.hero-title {
+    margin-top: 20vh;
+  }
+
+  h3.hero-subtitle {
+    margin-bottom: 80px;
   }
 }
 
@@ -11461,6 +11464,6 @@ label {
     font-size: 1.6rem;
   }
   .start-screen__slide {
-    align-items: flex-end;
+    align-items: flex-start;
   }
 }
