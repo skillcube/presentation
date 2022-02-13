@@ -7894,7 +7894,7 @@ label {
   position: relative;
   width: 100%;
   line-height: 1.4;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .review__item__author-name {
   position: relative;
@@ -9054,7 +9054,7 @@ label {
     height: 250px;
   }
   .review__item {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
   }
   .services .__image {
     max-height: 420px;
@@ -11435,7 +11435,7 @@ label {
   }
   .h2,
   h2 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   h1.hero-title {

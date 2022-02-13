@@ -16965,7 +16965,8 @@ var trim = String.prototype.trim ?
 					oAccItem    = $this.find('.accordion-item'),
 					oAccTrigger = $this.find('.accordion-toggler');
 
-				oAccItem.eq(0).addClass('active').find('article').show();
+        // Default active item
+				// oAccItem.eq(0).addClass('active').find('article').show();
 
 				oAccTrigger.on('click', function (j)
 				{
